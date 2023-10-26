@@ -1,0 +1,29 @@
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 50%;
+  margin: auto auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+label {
+  margin-top: 5px;
+}
+
+
+button {
+  
+  padding: 0.4rem;
+  width: 50%;
+  margin: 1rem auto;
+}

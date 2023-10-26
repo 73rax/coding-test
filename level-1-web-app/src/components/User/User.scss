@@ -1,0 +1,63 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.user {
+  &__wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__username {
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    @include desktop {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__verified {
+    background-color: $primary-verified-user;
+    background-image: url("../../assets/icons/check-mark.png");
+    background-size: 0.6rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 1.3rem;
+    height: 1.3rem;
+
+    border-radius: 50%;
+  }
+
+  &__pro {
+    &-mobile {
+      background-color: $primary-pro-user;
+      padding: 0.1rem 0.5rem;
+      border-radius: 10px;
+      color: white;
+
+      @include desktop {
+        display: none;
+      }
+    }
+    
+
+    &-desktop {
+      display: none;
+
+      @include desktop {
+        display: block;
+        height: 1.5rem;
+        border-radius: 10px;
+        background-color: $primary-pro-user;
+        color: white;
+        padding: 0.1rem 0.8rem;
+      }
+    }
+  }
+
+  &__none {
+    display: none;
+  }
+}

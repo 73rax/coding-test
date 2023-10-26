@@ -1,0 +1,16 @@
+@use "../../styles/partials/mixins" as *;
+
+.reaction {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.emoji {
+    &-excited {
+        background-image: url("../../assets/icons/grinning-squinting-face.png");
+        height: 1.4rem;
+        width: 1.4rem;
+        @include backgroundImage;
+    }
+}

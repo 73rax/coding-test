@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Goma Block";
+  src: url("../../assets/fonts/gomarice_goma_block.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Typo Quick";
+  src: url("../../assets/fonts/Typo\ Quik_Regular_Demo.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Typo Quick";
+  src: url("../../assets/fonts/Typo_Quik_Thin_Demo.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Typo Quick";
+  src: url("../../assets/fonts/Typo_Quik_Bold_Demo.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: "Goma Block";
+}
+
+
+body {
+  font-family: "Typo Quick";
+
+  
+}
+
+span {
+  font-weight: 700;  
+}

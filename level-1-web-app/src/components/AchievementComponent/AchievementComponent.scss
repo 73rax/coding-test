@@ -1,0 +1,36 @@
+@use "../../styles/partials/variables" as *;
+
+.achievement {
+  display: flex;
+//   justify-content: space-between;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 4px solid $primary-divider;
+  border-radius: 1px;
+
+
+  &__wrapper {
+    margin-left: 1.4rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+  }
+
+  &__description {
+    width: 85%;
+    margin-top: 0.2rem;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.achievement:last-child {
+  border-bottom: none;
+}

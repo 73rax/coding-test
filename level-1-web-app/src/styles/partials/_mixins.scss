@@ -1,0 +1,19 @@
+@use "./variables" as *;
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin backgroundImage {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

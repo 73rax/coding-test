@@ -1,0 +1,85 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.sidebar {
+    
+
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    margin-left: 0.3rem;
+    padding-right: 1rem;
+
+    background-color: white;
+
+
+    @include tablet {
+        // margin-left: 0.8rem;
+    }
+
+    &__nav {
+        height: 100%;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+  &__item {
+    border-style: none;
+    border-radius: 8px;
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    @include tablet {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
+    &:hover {
+        background-color: $primary-selected;
+    }
+    &--computer{
+        background-image: url("../../assets/icons/computer.svg");
+    }
+
+    &--profile {
+        background-image: url("../../assets/icons/profile-icon.png");
+    }
+
+    &--group {
+        background-image: url("../../assets/icons/group-icon.png");
+    }
+    &--medal {
+        background-image: url("../../assets/icons/medal-icon.png");
+    }
+    &--star{
+        background-image: url("../../assets/icons/star-icon.png");
+    }
+    &--rank {
+        background-image: url("../../assets/icons/leaderboard-icon.png");
+    }
+    &--diamond {
+        background-image: url("../../assets/icons/diamond-icon.png");
+    }
+    &--page {
+        background-image: url("../../assets/icons/page-icon.png");
+    }
+    &--message{
+        background-image: url("../../assets/icons/message-icon.png");
+    }
+    &--basket {
+        background-image: url("../../assets/icons/shopping-basket-icon.png");
+    }
+    &--style{
+        background-image: url("../../assets/icons/style-icon.png");
+    }
+  }
+}

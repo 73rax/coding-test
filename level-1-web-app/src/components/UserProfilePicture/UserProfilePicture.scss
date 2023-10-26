@@ -1,0 +1,12 @@
+.hexagon-container {
+  position: relative;
+  width: 3.5rem       ; /* Adjust the size as needed */
+  height: 3.5rem;
+  background: black;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.users-avatar {
+  height: 100%;
+  width: 100%;
+}

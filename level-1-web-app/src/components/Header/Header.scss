@@ -1,0 +1,108 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  background-color: $primary-header;
+
+  &__mobile {
+    display: flex;
+    // width: 100%;
+    justify-content: center;
+
+    gap: 3rem;
+    align-items: center;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__tablet-desktop {
+    display: none;
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.6rem 1rem 0.8rem;
+    }
+
+    @include desktop {
+      padding: 1rem 2.4rem 1rem 1.6rem;
+    }
+  }
+
+  &__container {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+  }
+
+  &__title {
+    color: $secondary-text-light;
+    font-size: 1.8rem;
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      align-items: baseline;
+      list-style: none;
+      padding: 0;
+      gap: 1rem;
+    }
+
+    &-item {
+      color: $secondary-text-light;
+      font-size: 1.2rem;
+      font-weight: 600;
+
+     
+    }
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__widget-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  &__form {
+    @include tablet {
+      width: 30%;
+    }
+  }
+
+  &__search {
+    background-color: $secondary-header;
+    border-style: none;
+    padding: 1rem 1.6rem;
+    color: $secondary-text-header;
+    border-radius: 5px;
+
+    background-image: url("../../assets/icons/magnifying-glass.svg");
+    background-position: 96%;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    &::placeholder {
+      color: $secondary-text-header;
+    }
+  }
+
+  &__login-button {
+    border-style: none;
+    padding: 1rem 1.6rem;
+    background-color: $primary-button;
+    border-radius: 5px;
+    color: $secondary-text-light;
+  }
+}
+
+

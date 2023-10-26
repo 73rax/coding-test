@@ -1,0 +1,49 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.group {
+  display: flex;
+  align-items: center;
+
+  margin: 2rem 0;
+
+  &__wrapper {
+    margin-left: 1.6rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.1rem;
+
+    @include desktop {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__members {
+    
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  &__public {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: auto;
+    margin-right: 2rem;    
+
+    background-image: url("../../assets/icons/public.png");
+    @include backgroundImage;
+  }
+
+  &__private {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    margin-left: auto;
+    margin-right: 2rem;
+
+    background-image: url("../../assets/icons/lock.png");
+    @include backgroundImage;
+  }
+}
